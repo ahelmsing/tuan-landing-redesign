@@ -38,7 +38,7 @@ export default function TuanLandingPage() {
             </div>
             <div className="hidden h-6 w-px bg-white/20 md:block" />
             <div className="hidden text-sm uppercase tracking-[0.3em] text-white/50 md:block">
-              Controlled Psychedelic
+              Embrace the Extraordinary
             </div>
           </div>
 
