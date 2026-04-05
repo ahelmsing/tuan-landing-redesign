@@ -30,7 +30,8 @@ export default function TuanLandingPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(217,70,239,0.42),transparent_32%),radial-gradient(circle_at_80%_20%,rgba(139,92,246,0.30),transparent_34%),radial-gradient(circle_at_60%_80%,rgba(59,130,246,0.22),transparent_38%)] opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_35%,rgba(217,70,239,0.20),transparent_28%),radial-gradient(circle_at_30%_75%,rgba(59,130,246,0.18),transparent_34%)] blur-3xl opacity-80" />
-        <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(rgba(217,70,239,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-[size:42px_42px]" />
+        <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(rgba(255,255,255,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.14)_1px,transparent_1px)] bg-[size:42px_42px]" />
+
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10">
           <div className="flex items-center gap-3">
             <div className="text-3xl font-black uppercase tracking-tight text-red-500">
@@ -139,8 +140,10 @@ export default function TuanLandingPage() {
         </main>
       </div>
 
-      <section id="products" className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section id="products" className="relative mx-auto max-w-7xl px-6 py-20 md:px-10">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(217,70,239,0.28),transparent_42%),radial-gradient(circle_at_20%_80%,rgba(124,58,237,0.22),transparent_48%)] opacity-90" />
+
+        <div className="relative z-10 mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <div className="mb-3 text-xs uppercase tracking-[0.35em] text-lime-300">
               Featured categories
@@ -156,7 +159,7 @@ export default function TuanLandingPage() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="relative z-10 grid gap-6 md:grid-cols-3">
           {featuredProducts.map((product) => (
             <article
               key={product.title}
@@ -205,8 +208,10 @@ export default function TuanLandingPage() {
         </div>
       </section>
 
-      <section id="experience" className="mx-auto max-w-7xl px-6 py-20 md:px-10">
-        <div className="grid gap-6 lg:grid-cols-3">
+      <section id="experience" className="relative mx-auto max-w-7xl px-6 py-20 md:px-10">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,rgba(59,130,246,0.22),transparent_45%),radial-gradient(circle_at_30%_80%,rgba(168,85,247,0.24),transparent_50%)] opacity-90" />
+
+        <div className="relative z-10 grid gap-6 lg:grid-cols-3">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7">
             <div className="text-xs uppercase tracking-[0.35em] text-lime-300">
               01
